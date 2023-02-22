@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Homework_2_Task_3_Weather_translator();
+            Homework_2_Task_4_Even_Odd_V1();
         }
 
         public static void Homeworks()
@@ -14,7 +14,8 @@
             Homework_2_Task_1_Calculator();
             Homework_2_Task_2_Number_ranges();
             Homework_2_Task_3_Weather_translator();
-            Homework_2_Task_4();
+            Homework_2_Task_4_Even_Odd_V1();
+            Homework_2_Task_4_Even_Odd_V2();
         }
 
         // HOMEWORK #1
@@ -194,15 +195,33 @@
             }
         }
 
-
-        public static void Homework_2_Task_4()
+        // TASK 4 - EVEN_ODD VERSION 1
+        public static void Homework_2_Task_4_Even_Odd_V1()
         {
+            Console.WriteLine("Please enter your number");
+            int number = int.Parse(Console.ReadLine());
+            int result = number % 2;
+            if (result == 0)
+            {
+                Console.WriteLine("Even number");
+            }
+            else
+            {
+                Console.WriteLine("Odd number");
+            }
+
 
         }
 
 
 
+        // TASK 5 - EVEN_ODD VERSION 2
+        public static void Homework_2_Task_4_Even_Odd_V2()
+        {
 
+
+
+        }
 
 
 
