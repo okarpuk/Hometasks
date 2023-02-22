@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Homework_2_Task_4_Even_Odd_V1();
+            Homework_2_Task_4_Even_Odd_V2();
         }
 
         public static void Homeworks()
@@ -209,27 +209,28 @@
             {
                 Console.WriteLine("Odd number");
             }
-
-
         }
-
-
 
         // TASK 5 - EVEN_ODD VERSION 2
         public static void Homework_2_Task_4_Even_Odd_V2()
         {
+            Console.WriteLine("Please enter your number");
+            int number = int.Parse(Console.ReadLine());
+            int result = number % 2;
 
-
-
+            switch (result)
+            {
+                case 0:
+                    {
+                        Console.WriteLine("Even number");
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("Odd number");
+                        break;
+                    }
+            }
         }
-
-
-
-
-
     }
-
-
-
-
 }
