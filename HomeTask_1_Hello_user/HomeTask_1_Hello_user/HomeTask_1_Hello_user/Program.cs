@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Homework_2_Task_4_Even_Odd_V2();
+            
         }
 
         public static void Homeworks()
@@ -92,7 +92,7 @@
 
             if ((number >= 0) && (number <= 14))
             {
-                Console.WriteLine("Entered number is in [0-14] range");
+                    Console.WriteLine("Entered number is in [0-14] range");
             }
 
             else
@@ -130,66 +130,66 @@
                 //1
                 case "солнечно":
                     {
-                        Console.WriteLine("sunny");
+                        Console.WriteLine("Translation: sunny");
                         break;
                     }
                 //2
                 case "пасмурно":
                     {
-                        Console.WriteLine("cloudy");
+                        Console.WriteLine("Translation: cloudy");
                         break;
                     }
                 //3
                 case "ветер":
                     {
-                        Console.WriteLine("wind");
+                        Console.WriteLine("Translation: wind");
                         break;
                     }
                 //4
                 case "дождь":
                     {
-                        Console.WriteLine("rain");
+                        Console.WriteLine("Translation: rain");
                         break;
                     }
                 //5
                 case "снег":
                     {
-                        Console.WriteLine("snow");
+                        Console.WriteLine("Translation: snow");
                         break;
                     }
                 //6
                 case "ураган":
                     {
-                        Console.WriteLine("hurricane");
+                        Console.WriteLine("Translation: hurricane");
                         break;
                     }
                 //7
                 case "температура":
                     {
-                        Console.WriteLine("temperature");
+                        Console.WriteLine("Translation: temperature");
                         break;
                     }
                 //8
                 case "давление":
                     {
-                        Console.WriteLine("pressure");
+                        Console.WriteLine("Translation: pressure");
                         break;
                     }
                 //9
                 case "туман":
                     {
-                        Console.WriteLine("fog");
+                        Console.WriteLine("Translation: fog");
                         break;
                     }
                 //10
                 case "влажность":
                     {
-                        Console.WriteLine("humidity");
+                        Console.WriteLine("Translation: humidity");
                         break;
                     }
                 default:
                     {
-                        Console.WriteLine("This word is not in the dictionary");
+                        Console.WriteLine("Unable to translate. This word is not in the dictionary");
                         break;
                     }
             }
@@ -201,6 +201,7 @@
             Console.WriteLine("Please enter your number");
             int number = int.Parse(Console.ReadLine());
             int result = number % 2;
+
             if (result == 0)
             {
                 Console.WriteLine("Even number");
