@@ -118,7 +118,87 @@
             }
         }
 
-        
+        // TASK 3 - WEATHER TRANSLATOR
+        public static void Homework_2_Task_3_Weather_translator()
+        {
+            Console.WriteLine("Please enter the word about weather on russian to get english translation");
+            string word = Console.ReadLine();
+
+            switch (word)
+            {
+                //1
+                case "солнечно":
+                    {
+                        Console.WriteLine("sunny");
+                        break;
+                    }
+                //2
+                case "пасмурно":
+                    {
+                        Console.WriteLine("cloudy");
+                        break;
+                    }
+                //3
+                case "ветер":
+                    {
+                        Console.WriteLine("wind");
+                        break;
+                    }
+                //4
+                case "дождь":
+                    {
+                        Console.WriteLine("rain");
+                        break;
+                    }
+                //5
+                case "снег":
+                    {
+                        Console.WriteLine("snow");
+                        break;
+                    }
+                //6
+                case "ураган":
+                    {
+                        Console.WriteLine("hurricane");
+                        break;
+                    }
+                //7
+                case "температура":
+                    {
+                        Console.WriteLine("temperature");
+                        break;
+                    }
+                //8
+                case "давление":
+                    {
+                        Console.WriteLine("pressure");
+                        break;
+                    }
+                //9
+                case "туман":
+                    {
+                        Console.WriteLine("fog");
+                        break;
+                    }
+                //10
+                case "влажность":
+                    {
+                        Console.WriteLine("humidity");
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("This word is not in the dictionary");
+                        break;
+                    }
+            }
+        }
+
+
+        public static void Homework_2_Task_4()
+        {
+
+        }
 
 
 
