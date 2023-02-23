@@ -33,51 +33,42 @@
         {
             Console.WriteLine("Please enter first number");
             double operand1 = double.Parse(Console.ReadLine());
-
             Console.WriteLine("Please enter operation");
             string sign = (Console.ReadLine());
-
             switch (sign)
             {
                 case "+":
                     {
                         Console.WriteLine("Please enter second number");
                         double operand2 = double.Parse(Console.ReadLine());
-                        double result = operand1 + operand2;
-                        Console.WriteLine("Addition result = " + result);
+                        Console.WriteLine("Addition result = " + (operand1 + operand2));
                         break;
                     }
-
                 case "-":
                     {
                         Console.WriteLine("Please enter second number");
                         double operand2 = double.Parse(Console.ReadLine());
-                        double result = operand1 - operand2;
-                        Console.WriteLine("Subtraction result = " + result);
+                        Console.WriteLine("Subtraction result = " + (operand1 - operand2));
                         break;
                     }
-
                 case "*":
                     {
                         Console.WriteLine("Please enter second number");
                         double operand2 = double.Parse(Console.ReadLine());
-                        double result = operand1 * operand2;
-                        Console.WriteLine("Multiplication result = " + result);
+                        Console.WriteLine("Multiplication result = " + (operand1 * operand2));
                         break;
                     }
-
                 case "/":
                     {
                         Console.WriteLine("Please enter second number");
                         double operand2 = double.Parse(Console.ReadLine());
-                        double result = operand1 / operand2;
                         if (operand2 == 0)
                         {
                             Console.WriteLine("Warning! Can't divide by zero!");
                         }
                         else
                         {
-                            Console.WriteLine("Division result = " + result);
+                            Console.WriteLine("Division result = " + (operand1 / operand2));
                         }
                         break;
                     }
@@ -87,32 +78,24 @@
         // TASK 2 - NUMBER RANGES
         public static void Homework_2_Task_2_Number_ranges()
         {
-            Console.WriteLine("Please enter your number");
+            Console.WriteLine("Please enter your number in [0-100] range");
             int number = int.Parse(Console.ReadLine());
-
             if ((number >= 0) && (number <= 14))
             {
-                    Console.WriteLine("Entered number is in [0-14] range");
+                Console.WriteLine("Entered number is in [0-14] range");
             }
-
-            else
-            if ((number >= 15) && (number <= 35))
+            else if ((number >= 15) && (number <= 35))
             {
                 Console.WriteLine("Entered number is in [15-35] range");
             }
-
-            else
-            if ((number >= 36) && (number <= 49))
+            else if ((number >= 36) && (number <= 49))
             {
                 Console.WriteLine("Entered number is in [36-49] range");
             }
-
-            else
-            if ((number >= 36) && (number <= 49))
+            else if ((number >= 36) && (number <= 49))
             {
                 Console.WriteLine("Entered number is in [50-100] range");
             }
-
             else
             {
                 Console.WriteLine("Entered number is out of [0-100] range");
@@ -124,74 +107,51 @@
         {
             Console.WriteLine("Please enter the word about weather on russian to get english translation");
             string word = Console.ReadLine();
-
             switch (word)
             {
                 //1
                 case "солнечно":
-                    {
-                        Console.WriteLine("Translation: sunny");
-                        break;
-                    }
+                    Console.WriteLine("Translation: sunny");
+                    break;
                 //2
                 case "пасмурно":
-                    {
-                        Console.WriteLine("Translation: cloudy");
-                        break;
-                    }
+                    Console.WriteLine("Translation: cloudy");
+                    break;
                 //3
                 case "ветер":
-                    {
-                        Console.WriteLine("Translation: wind");
-                        break;
-                    }
+                    Console.WriteLine("Translation: wind");
+                    break;
                 //4
                 case "дождь":
-                    {
-                        Console.WriteLine("Translation: rain");
-                        break;
-                    }
+                    Console.WriteLine("Translation: rain");
+                    break;
                 //5
                 case "снег":
-                    {
-                        Console.WriteLine("Translation: snow");
-                        break;
-                    }
+                    Console.WriteLine("Translation: snow");
+                    break;
                 //6
                 case "ураган":
-                    {
-                        Console.WriteLine("Translation: hurricane");
-                        break;
-                    }
+                    Console.WriteLine("Translation: hurricane");
+                    break;
                 //7
                 case "температура":
-                    {
-                        Console.WriteLine("Translation: temperature");
-                        break;
-                    }
+                    Console.WriteLine("Translation: temperature");
+                    break;
                 //8
                 case "давление":
-                    {
-                        Console.WriteLine("Translation: pressure");
-                        break;
-                    }
+                    Console.WriteLine("Translation: pressure");
+                    break;
                 //9
                 case "туман":
-                    {
-                        Console.WriteLine("Translation: fog");
-                        break;
-                    }
+                    Console.WriteLine("Translation: fog");
+                    break;
                 //10
                 case "влажность":
-                    {
-                        Console.WriteLine("Translation: humidity");
-                        break;
-                    }
+                    Console.WriteLine("Translation: humidity");
+                    break;
                 default:
-                    {
-                        Console.WriteLine("Unable to translate. This word is not in the dictionary");
-                        break;
-                    }
+                    Console.WriteLine("Unable to translate. This word is not in the dictionary");
+                    break;
             }
         }
 
@@ -200,9 +160,7 @@
         {
             Console.WriteLine("Please enter your number");
             int number = int.Parse(Console.ReadLine());
-            int result = number % 2;
-
-            if (result == 0)
+            if (number % 2 == 0)
             {
                 Console.WriteLine("Even number");
             }
@@ -217,20 +175,14 @@
         {
             Console.WriteLine("Please enter your number");
             int number = int.Parse(Console.ReadLine());
-            int result = number % 2;
-
-            switch (result)
+            switch (number % 2)
             {
                 case 0:
-                    {
-                        Console.WriteLine("Even number");
-                        break;
-                    }
+                    Console.WriteLine("Even number");
+                    break;
                 default:
-                    {
-                        Console.WriteLine("Odd number");
-                        break;
-                    }
+                    Console.WriteLine("Odd number");
+                    break;
             }
         }
     }
