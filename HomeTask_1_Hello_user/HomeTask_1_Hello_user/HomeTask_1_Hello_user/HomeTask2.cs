@@ -2,7 +2,7 @@
 {
     internal class HomeTask2
     {
-        public static void Homeworks()
+        public static void Tasks()
         {
             Homework_2_Task_1_Calculator();
             Homework_2_Task_2_Number_ranges();
