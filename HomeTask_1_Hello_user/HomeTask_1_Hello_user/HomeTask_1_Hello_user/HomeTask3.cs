@@ -9,7 +9,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
         {
             HW3_T0_Is_Number_in_array();
             //HW3_T1_Delete_Entered_Number();
-            HW3_T2_Delete_Max_Min_Mid_Value();
+            HW3_T2_Max_Min_Average_Value();
 
         }
 
@@ -74,13 +74,13 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 
 
 
-        //TASK 2 - MAX_MIN_MID_VALUE
-        public static void HW3_T2_Delete_Max_Min_Mid_Value()
+        //TASK 2 - MAX_MIN_AVERAGE_VALUE
+        public static void HW3_T2_Max_Min_Average_Value()
         {
             Console.WriteLine("Enter array length");
             int[] myArray = new int[int.Parse(Console.ReadLine())];
             Random random = new Random();
-            
+
             for (int i = 0; i < myArray.Length; i++)
             {
                 myArray[i] = random.Next(1, 20);
@@ -93,20 +93,48 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             Console.WriteLine("Average value of array is " + myArray.Average());
         }
 
+        //TASK 3 - AVERAGE_OF_ARRAY_ELEMENTS
+        public static void HW3_T3_Average_of_array_elements()
+        {
+            int[] myArray1 = new int[5];
+            Random random1 = new Random();
+            for (int i1 = 0; i1 < myArray1.Length; i1++)
+            {
+                myArray1[i1] = random1.Next(1, 50);
+                Console.Write(myArray1[i1] + " ");
+            }
+            Console.WriteLine();
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+            int[] myArray2 = new int[5];
+            Random random2 = new Random();
+            for (int i2 = 0; i2 < myArray2.Length; i2++)
+            {
+                myArray2[i2] = random2.Next(1, 50);
+                Console.Write(myArray2[i2] + " ");
+            }
+            Console.WriteLine();
+
+            double average1 = (double)myArray1.Sum() / 5;
+            Console.WriteLine("Average of array #1 is " + "{0: 0.00}", average1);
+
+            double average2 = (double)myArray2.Sum() / 5;
+            Console.WriteLine("Average of array #2 is " + "{0: 0.00}", average2);
+
+            if (average1 > average2)
+            {
+                Console.WriteLine("Average of array #1 is bigger then average of array #2");
+            }
+            else if (average1 < average2)
+            {
+                Console.WriteLine("Average of array #2 is bigger then average of array #1");
+            }
+            else
+            {
+                Console.WriteLine("Average of array #1 is the same like average of array #2");
+            }
+        }
+
+
     }
 
 }
