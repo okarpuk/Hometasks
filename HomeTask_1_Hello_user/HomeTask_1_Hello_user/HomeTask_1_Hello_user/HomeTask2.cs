@@ -1,4 +1,4 @@
-﻿namespace HomeTask_1_Hello_user
+﻿namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
     internal class HomeTask2
     {
@@ -17,7 +17,7 @@
             Console.WriteLine("Please enter first number");
             double operand1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Please enter operation");
-            string sign = (Console.ReadLine());
+            string sign = Console.ReadLine();
             switch (sign)
             {
                 case "+":
@@ -38,7 +38,7 @@
                     {
                         Console.WriteLine("Please enter second number");
                         double operand2 = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Multiplication result = " + (operand1 * operand2));
+                        Console.WriteLine("Multiplication result = " + operand1 * operand2);
                         break;
                     }
                 case "/":
@@ -51,7 +51,7 @@
                         }
                         else
                         {
-                            Console.WriteLine("Division result = " + (operand1 / operand2));
+                            Console.WriteLine("Division result = " + operand1 / operand2);
                         }
                         break;
                     }
@@ -66,19 +66,19 @@
         {
             Console.WriteLine("Please enter your number in [0-100] range");
             int number = int.Parse(Console.ReadLine());
-            if ((number >= 0) && (number <= 14))
+            if (number >= 0 && number <= 14)
             {
                 Console.WriteLine("Entered number is in [0-14] range");
             }
-            else if ((number >= 15) && (number <= 35))
+            else if (number >= 15 && number <= 35)
             {
                 Console.WriteLine("Entered number is in [15-35] range");
             }
-            else if ((number >= 36) && (number <= 49))
+            else if (number >= 36 && number <= 49)
             {
                 Console.WriteLine("Entered number is in [36-49] range");
             }
-            else if ((number >= 36) && (number <= 49))
+            else if (number >= 36 && number <= 49)
             {
                 Console.WriteLine("Entered number is in [50-100] range");
             }

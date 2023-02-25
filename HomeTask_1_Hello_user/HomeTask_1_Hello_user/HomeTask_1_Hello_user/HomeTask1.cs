@@ -1,4 +1,4 @@
-﻿namespace HomeTask_1_Hello_user
+﻿namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
     internal class HomeTask1
     {
