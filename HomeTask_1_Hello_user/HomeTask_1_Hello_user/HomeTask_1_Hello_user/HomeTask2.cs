@@ -4,15 +4,15 @@
     {
         public static void Tasks()
         {
-            Homework_2_Task_1_Calculator();
-            Homework_2_Task_2_Number_ranges();
-            Homework_2_Task_3_Weather_translator();
-            Homework_2_Task_4_Even_Odd_V1();
-            Homework_2_Task_4_Even_Odd_V2();
+            HW2_T1_Calculator();
+            HW2_T2_Number_ranges();
+            HW2_T3_Weather_translator();
+            HW2_T4_Even_Odd_V1();
+            HW2_T5_Even_Odd_V2();
         }
 
         // TASK 1 - CALCULATOR
-        public static void Homework_2_Task_1_Calculator()
+        public static void HW2_T1_Calculator()
         {
             Console.WriteLine("Please enter first number");
             double operand1 = double.Parse(Console.ReadLine());
@@ -62,7 +62,7 @@
         }
 
         // TASK 2 - NUMBER RANGES
-        public static void Homework_2_Task_2_Number_ranges()
+        public static void HW2_T2_Number_ranges()
         {
             Console.WriteLine("Please enter your number in [0-100] range");
             int number = int.Parse(Console.ReadLine());
@@ -89,7 +89,7 @@
         }
 
         // TASK 3 - WEATHER TRANSLATOR
-        public static void Homework_2_Task_3_Weather_translator()
+        public static void HW2_T3_Weather_translator()
         {
             Console.WriteLine("Please enter the word about weather on russian to get english translation");
             string word = Console.ReadLine();
@@ -142,7 +142,7 @@
         }
 
         // TASK 4 - EVEN_ODD VERSION 1
-        public static void Homework_2_Task_4_Even_Odd_V1()
+        public static void HW2_T4_Even_Odd_V1()
         {
             Console.WriteLine("Please enter your number");
             int number = int.Parse(Console.ReadLine());
@@ -157,7 +157,7 @@
         }
 
         // TASK 5 - EVEN_ODD VERSION 2
-        public static void Homework_2_Task_4_Even_Odd_V2()
+        public static void HW2_T5_Even_Odd_V2()
         {
             Console.WriteLine("Please enter your number");
             int number = int.Parse(Console.ReadLine());

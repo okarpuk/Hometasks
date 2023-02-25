@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            HomeTask3.Homework_3_Task_0_Is_Number_in_array();
+            HomeTask3.HW3_T2_Delete_Max_Min_Mid_Value();
         }
     }
 }
