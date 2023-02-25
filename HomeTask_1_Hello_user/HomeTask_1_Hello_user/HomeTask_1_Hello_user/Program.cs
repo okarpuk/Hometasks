@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            
+            HomeTask3.HW3_T1_Delete_Entered_Number();
         }
     }
 }

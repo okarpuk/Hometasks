@@ -39,40 +39,31 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             }
         }
 
-        /*
+
         //TASK 1 - DELETE_ENTERED_NUMBER        
-        
-            public static void HW3_T1_Delete_Entered_Number()
+
+        public static void HW3_T1_Delete_Entered_Number()
         {
-            int[] myArray = { 11, 32, 3, 44, 51 };
+            int[] myArray = { 7, 24, 43, 4, 35 };
+            Console.WriteLine("Please enter the number to delete it from array");
             int indexToDelete = Array.IndexOf(myArray, int.Parse(Console.ReadLine()));
-
-            
-            
-            
-            
-            bool checkNumber = false;
-
-            for (int i = 0; i < myArray.Length; i++)
-            {
-                if (indexToDelete == myArray[i])
-                {
-                    checkNumber = true;
-                }
-            }
-
-            if (checkNumber == true)
-            {
-                //RemoveAt(ref myArray, indexToDelete);
-            }
-            else
-            {
-                Console.WriteLine("Entered number is not in array");
-            }      
+            myArray = Delete(myArray, indexToDelete);
+            Console.WriteLine(string.Join(" ", myArray));
         }
-        */
-
-
+        public static int[] Delete(int[] myArray, int indexToDelete)
+        {
+            if (indexToDelete < myArray.Length && indexToDelete >= 0)
+            {
+                int[] myArray2 = new int[myArray.Length - 1];
+                for (int i = 0, j = 0; i < myArray.Length; i++)
+                {
+                    if (i == indexToDelete) continue;
+                    myArray2[j++] = myArray[i];
+                }
+                myArray = myArray2;
+            }
+            return myArray;
+        }
 
         //TASK 2 - MAX_MIN_AVERAGE_VALUE
         public static void HW3_T2_Max_Min_Average_Value()
@@ -133,9 +124,6 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
                 Console.WriteLine("Average of array #1 is the same like average of array #2");
             }
         }
-
-
     }
-
 }
 
