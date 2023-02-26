@@ -8,9 +8,9 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
         public static void Tasks()
         {
             HW3_T0_Is_Number_in_array();
-            //HW3_T1_Delete_Entered_Number();
+            HW3_T1_Delete_Entered_Number();
             HW3_T2_Max_Min_Average_Value();
-
+            HW3_T3_Average_of_array_elements();
         }
 
         // TASK 0 - Is_Number_in_array
@@ -39,9 +39,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             }
         }
 
-
-        //TASK 1 - DELETE_ENTERED_NUMBER        
-
+        //TASK 1 - DELETE_ENTERED_NUMBER
         public static void HW3_T1_Delete_Entered_Number()
         {
             int[] myArray = { 7, 24, 43, 4, 35 };
@@ -62,6 +60,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
                 }
                 myArray = myArray2;
             }
+            else Console.WriteLine("Number is out of array!");
             return myArray;
         }
 
@@ -107,7 +106,6 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 
             double average1 = (double)myArray1.Sum() / 5;
             Console.WriteLine("Average of array #1 is " + "{0: 0.00}", average1);
-
             double average2 = (double)myArray2.Sum() / 5;
             Console.WriteLine("Average of array #2 is " + "{0: 0.00}", average2);
 
