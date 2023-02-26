@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            HomeTask3.HW3_T5_Change_odd_elements();
+            HomeTask3.HW3_T6_Array_Sorting();
         }
     }
 }

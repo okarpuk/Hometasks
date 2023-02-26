@@ -142,5 +142,19 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
                 Console.Write(myArray[i] + " ");
             }
         }
+
+        //TASK 6 - ARRAY_SORTING
+        public static void HW3_T6_Array_Sorting()
+        {
+            string[] myArray = { "Tom", "Bob", "John", "Kate", "Mark", "Amanda", "Yoko",  };
+            Array.Sort(myArray);
+
+            for (int i = 0; i < myArray.Length; i++) 
+                Console.Write(myArray[i] + " ");
+                Console.WriteLine();
+
+            // Вместо цикла [for] можно так
+            //Console.WriteLine(String.Join(", ", myArray));
+        }
     }
 }
