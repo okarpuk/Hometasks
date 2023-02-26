@@ -11,6 +11,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             HW3_T1_Delete_Entered_Number();
             HW3_T2_Max_Min_Average_Value();
             HW3_T3_Average_of_array_elements();
+            HW3_T5_Change_odd_elements();
         }
 
         // TASK 0 - Is_Number_in_array
@@ -122,6 +123,24 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
                 Console.WriteLine("Average of array #1 is the same like average of array #2");
             }
         }
+
+        //TASK 5 - CHANGE_ODD_ELEMENTS
+        public static void HW3_T5_Change_odd_elements()
+        {
+            int[] myArray = { 7, 24, 43, 4, 35 };
+
+            for (int i = 0; i < myArray.Length; i++)
+                Console.Write(myArray[i] + " ");
+                Console.WriteLine();
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                if (myArray[i] % 2 != 0)
+                {
+                    myArray[i] = 0;
+                }
+                Console.Write(myArray[i] + " ");
+            }
+        }
     }
 }
-
