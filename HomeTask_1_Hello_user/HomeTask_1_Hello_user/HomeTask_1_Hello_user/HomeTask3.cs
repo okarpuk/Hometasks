@@ -13,6 +13,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             HW3_T3_Average_of_array_elements();
             HW3_T5_Change_odd_elements();
             HW3_T6_Array_Sorting();
+            HW3_T9_2_Dimension_Array_Elements_Sum();
         }
 
         // TASK #0 - Is_Number_in_array
@@ -26,19 +27,13 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             for (int i = 0; i < numbers.Length; i++)
             {
                 if (findNumber == numbers[i])
-                {
                     checkNumber = true;
-                }
             }
 
             if (checkNumber == true)
-            {
                 Console.WriteLine("Entered number is in array");
-            }
             else
-            {
                 Console.WriteLine("Entered number is not in array");
-            }
         }
 
         //TASK #1 - DELETE_ENTERED_NUMBER
@@ -112,17 +107,11 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             Console.WriteLine("Average of array #2 is " + "{0: 0.00}", average2);
 
             if (average1 > average2)
-            {
                 Console.WriteLine("Average of array #1 is bigger then average of array #2");
-            }
             else if (average1 < average2)
-            {
                 Console.WriteLine("Average of array #2 is bigger then average of array #1");
-            }
             else
-            {
                 Console.WriteLine("Average of array #1 is the same like average of array #2");
-            }
         }
 
         //TASK #5 - CHANGE_ODD_ELEMENTS
@@ -137,9 +126,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             for (int i = 0; i < myArray.Length; i++)
             {
                 if (myArray[i] % 2 != 0)
-                {
                     myArray[i] = 0;
-                }
                 Console.Write(myArray[i] + " ");
             }
         }
@@ -179,21 +166,6 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             foreach (int i in myArray)
                 sum += i;
             Console.WriteLine("Array elements sum = " + sum);
-
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
