@@ -12,9 +12,10 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             HW3_T2_Max_Min_Average_Value();
             HW3_T3_Average_of_array_elements();
             HW3_T5_Change_odd_elements();
+            HW3_T6_Array_Sorting();
         }
 
-        // TASK 0 - Is_Number_in_array
+        // TASK #0 - Is_Number_in_array
         public static void HW3_T0_Is_Number_in_array()
         {
             int[] numbers = { 17, 2, 55, 6, 11, };
@@ -40,7 +41,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             }
         }
 
-        //TASK 1 - DELETE_ENTERED_NUMBER
+        //TASK #1 - DELETE_ENTERED_NUMBER
         public static void HW3_T1_Delete_Entered_Number()
         {
             int[] myArray = { 7, 24, 43, 4, 35 };
@@ -49,14 +50,14 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             myArray = Delete(myArray, indexToDelete);
             Console.WriteLine(string.Join(" ", myArray));
         }
-        public static int[] Delete(int[] myArray, int indexToDelete)
+        public static int[] Delete(int[] myArray, int numberToDelete)
         {
-            if (indexToDelete < myArray.Length && indexToDelete >= 0)
+            if (numberToDelete < myArray.Length && numberToDelete >= 0)
             {
                 int[] myArray2 = new int[myArray.Length - 1];
                 for (int i = 0, j = 0; i < myArray.Length; i++)
                 {
-                    if (i == indexToDelete) continue;
+                    if (i == numberToDelete) continue;
                     myArray2[j++] = myArray[i];
                 }
                 myArray = myArray2;
@@ -65,7 +66,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             return myArray;
         }
 
-        //TASK 2 - MAX_MIN_AVERAGE_VALUE
+        //TASK #2 - MAX_MIN_AVERAGE_VALUE
         public static void HW3_T2_Max_Min_Average_Value()
         {
             Console.WriteLine("Enter array length");
@@ -84,15 +85,15 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             Console.WriteLine("Average value of array is " + myArray.Average());
         }
 
-        //TASK 3 - AVERAGE_OF_ARRAY_ELEMENTS
+        //TASK #3 - AVERAGE_OF_ARRAY_ELEMENTS
         public static void HW3_T3_Average_of_array_elements()
         {
-            int[] myArray1 = new int[5];
-            Random random1 = new Random();
-            for (int i1 = 0; i1 < myArray1.Length; i1++)
+            int[] myArray = new int[5];
+            Random random = new Random();
+            for (int i = 0; i < myArray.Length; i++)
             {
-                myArray1[i1] = random1.Next(1, 50);
-                Console.Write(myArray1[i1] + " ");
+                myArray[i] = random.Next(1, 50);
+                Console.Write(myArray[i] + " ");
             }
             Console.WriteLine();
 
@@ -105,7 +106,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             }
             Console.WriteLine();
 
-            double average1 = (double)myArray1.Sum() / 5;
+            double average1 = (double)myArray.Sum() / 5;
             Console.WriteLine("Average of array #1 is " + "{0: 0.00}", average1);
             double average2 = (double)myArray2.Sum() / 5;
             Console.WriteLine("Average of array #2 is " + "{0: 0.00}", average2);
@@ -124,14 +125,14 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             }
         }
 
-        //TASK 5 - CHANGE_ODD_ELEMENTS
+        //TASK #5 - CHANGE_ODD_ELEMENTS
         public static void HW3_T5_Change_odd_elements()
         {
             int[] myArray = { 7, 24, 43, 4, 35 };
 
             for (int i = 0; i < myArray.Length; i++)
                 Console.Write(myArray[i] + " ");
-                Console.WriteLine();
+            Console.WriteLine();
 
             for (int i = 0; i < myArray.Length; i++)
             {
@@ -143,18 +144,56 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             }
         }
 
-        //TASK 6 - ARRAY_SORTING
+        //TASK #6 - ARRAY_SORTING
         public static void HW3_T6_Array_Sorting()
         {
-            string[] myArray = { "Tom", "Bob", "John", "Kate", "Mark", "Amanda", "Yoko",  };
+            string[] myArray = { "Tom", "Bob", "John", "Kate", "Mark", "Amanda", "Yoko", };
             Array.Sort(myArray);
 
-            for (int i = 0; i < myArray.Length; i++) 
+            for (int i = 0; i < myArray.Length; i++)
                 Console.Write(myArray[i] + " ");
-                Console.WriteLine();
+            Console.WriteLine();
 
             // Вместо цикла [for] можно так
             //Console.WriteLine(String.Join(", ", myArray));
+        }
+
+        //TASK #9 - 2_DIMENSION_ARRAY_ELEMENTS_SUM
+        public static void HW3_T9_2_Dimension_Array_Elements_Sum()
+        {
+            int[,] myArray = new int[5, 5];
+            Random random = new Random();
+            int sum = 0;
+
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    myArray[i, j] = random.Next(1, 50);
+                    Console.Write(myArray[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+            foreach (int i in myArray)
+                sum += i;
+            Console.WriteLine("Array elements sum = " + sum);
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }

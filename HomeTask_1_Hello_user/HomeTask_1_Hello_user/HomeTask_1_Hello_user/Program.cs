@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            HomeTask3.HW3_T6_Array_Sorting();
+            HomeTask3.HW3_T9_2_Dimension_Array_Elements_Sum();
         }
     }
 }

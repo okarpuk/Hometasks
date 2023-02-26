@@ -11,7 +11,7 @@
             HW2_T5_Even_Odd_V2();
         }
 
-        // TASK 1 - CALCULATOR
+        // TASK #1 - CALCULATOR
         public static void HW2_T1_Calculator()
         {
             Console.WriteLine("Please enter first number");
@@ -61,7 +61,7 @@
             }
         }
 
-        // TASK 2 - NUMBER RANGES
+        // TASK #2 - NUMBER RANGES
         public static void HW2_T2_Number_ranges()
         {
             Console.WriteLine("Please enter your number in [0-100] range");
@@ -88,7 +88,7 @@
             }
         }
 
-        // TASK 3 - WEATHER TRANSLATOR
+        // TASK #3 - WEATHER TRANSLATOR
         public static void HW2_T3_Weather_translator()
         {
             Console.WriteLine("Please enter the word about weather on russian to get english translation");
@@ -141,7 +141,7 @@
             }
         }
 
-        // TASK 4 - EVEN_ODD VERSION 1
+        // TASK #4 - EVEN_ODD VERSION 1
         public static void HW2_T4_Even_Odd_V1()
         {
             Console.WriteLine("Please enter your number");
@@ -156,7 +156,7 @@
             }
         }
 
-        // TASK 5 - EVEN_ODD VERSION 2
+        // TASK #5 - EVEN_ODD VERSION 2
         public static void HW2_T5_Even_Odd_V2()
         {
             Console.WriteLine("Please enter your number");
