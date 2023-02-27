@@ -23,17 +23,21 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             Console.WriteLine("Please enter your number");
             int findNumber = int.Parse(Console.ReadLine());
             bool checkNumber = false;
-
             for (int i = 0; i < numbers.Length; i++)
             {
                 if (findNumber == numbers[i])
+                {
                     checkNumber = true;
+                }
             }
-
             if (checkNumber == true)
+            {
                 Console.WriteLine("Entered number is in array");
+            }
             else
+            {
                 Console.WriteLine("Entered number is not in array");
+            }
         }
 
         //TASK #1 - DELETE_ENTERED_NUMBER
@@ -53,11 +57,16 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
                 for (int i = 0, j = 0; i < myArray.Length; i++)
                 {
                     if (i == numberToDelete) continue;
-                    myArray2[j++] = myArray[i];
+                    {
+                        myArray2[j++] = myArray[i];
+                    }
                 }
                 myArray = myArray2;
             }
-            else Console.WriteLine("Number is out of array!");
+            else
+            {
+                Console.WriteLine("Number is out of array!");
+            }
             return myArray;
         }
 
@@ -67,13 +76,11 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             Console.WriteLine("Enter array length");
             int[] myArray = new int[int.Parse(Console.ReadLine())];
             Random random = new Random();
-
             for (int i = 0; i < myArray.Length; i++)
             {
                 myArray[i] = random.Next(1, 20);
                 Console.Write(myArray[i] + " ");
             }
-
             Console.WriteLine();
             Console.WriteLine("Max value of array is " + myArray.Max());
             Console.WriteLine("Min value of array is " + myArray.Min());
@@ -105,13 +112,19 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             Console.WriteLine("Average of array #1 is " + "{0: 0.00}", average1);
             double average2 = (double)myArray2.Sum() / 5;
             Console.WriteLine("Average of array #2 is " + "{0: 0.00}", average2);
-
+            
             if (average1 > average2)
+            {
                 Console.WriteLine("Average of array #1 is bigger then average of array #2");
+            }
             else if (average1 < average2)
+            {
                 Console.WriteLine("Average of array #2 is bigger then average of array #1");
+            }
             else
+            {
                 Console.WriteLine("Average of array #1 is the same like average of array #2");
+            }
         }
 
         //TASK #5 - CHANGE_ODD_ELEMENTS
@@ -120,13 +133,17 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             int[] myArray = { 7, 24, 43, 4, 35 };
 
             for (int i = 0; i < myArray.Length; i++)
+            {
                 Console.Write(myArray[i] + " ");
+            }
             Console.WriteLine();
 
             for (int i = 0; i < myArray.Length; i++)
             {
                 if (myArray[i] % 2 != 0)
+                {
                     myArray[i] = 0;
+                }
                 Console.Write(myArray[i] + " ");
             }
         }
@@ -136,9 +153,10 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
         {
             string[] myArray = { "Tom", "Bob", "John", "Kate", "Mark", "Amanda", "Yoko", };
             Array.Sort(myArray);
-
             for (int i = 0; i < myArray.Length; i++)
+            {
                 Console.Write(myArray[i] + " ");
+            }
             Console.WriteLine();
 
             // Вместо цикла [for] можно так
@@ -164,7 +182,9 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             Console.WriteLine();
 
             foreach (int i in myArray)
+            {
                 sum += i;
+            }
             Console.WriteLine("Array elements sum = " + sum);
         }
     }
