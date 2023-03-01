@@ -19,7 +19,9 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             HW3_T9_2_Dimension_Array_Elements_Sum();
         }
 
-        // TASK #0 - Is_Number_in_array
+        /// <summary>
+        /// TASK #0 - Is_Number_in_array
+        /// </summary>
         public static void HW3_T0_Is_Number_in_array()
         {
             int[] numbers = { 17, 2, 55, 6, 11, };
