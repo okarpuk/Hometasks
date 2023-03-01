@@ -13,6 +13,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
         {
             HW4_T1();
             HW4_T2();
+            HW4_T3();
 
         }
 
@@ -41,7 +42,20 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             Console.WriteLine(string.Join(" ", words));
         }
 
-
+        /// <summary>
+        /// TASK #3 - Create 2 variables of string [teamwithsomeofexcersicesabcwanttomakeitbetter]
+        /// </summary>
+        public static void HW4_T3()
+        {
+            string text = "teamwithsomeofexcersicesabcwanttomakeitbetter";
+            Console.WriteLine(text);
+            text = text.Replace("abc", " ");
+            string[] words = text.Split(new char[] {' '});
+            string firstWord = words[0];
+            string secondWord = words[1];
+            Console.WriteLine(firstWord);
+            Console.WriteLine(secondWord);
+        }
 
 
 
