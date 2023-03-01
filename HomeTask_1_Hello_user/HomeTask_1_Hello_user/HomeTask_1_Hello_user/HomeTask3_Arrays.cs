@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
-    internal class HomeTask3
+    internal class HomeTask3_Arrays
     {
         public static void Tasks()
         {

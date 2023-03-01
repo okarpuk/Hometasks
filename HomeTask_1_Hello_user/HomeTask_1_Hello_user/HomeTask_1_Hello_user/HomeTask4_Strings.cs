@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
-    internal class Program
+    internal class HomeTask4_Strings
     {
-        static void Main(string[] args)
-        {
-            
-        }
     }
 }
