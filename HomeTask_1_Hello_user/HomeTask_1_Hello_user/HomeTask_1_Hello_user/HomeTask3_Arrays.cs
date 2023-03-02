@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
-    internal class HomeTask3_Arrays
+    public class HomeTask3_Arrays
     {
         public static void Tasks()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
-    internal class HomeTask2_if_else_switch
+    public class HomeTask2_if_else_switch
     {
         public static void Tasks()
         {
