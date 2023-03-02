@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -14,9 +15,9 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             HW4_T1();
             HW4_T2();
             HW4_T3();
+            HW4_T4();
 
         }
-
         /// <summary>
         /// TASK #1 - Change [TEST] to [TESTING] in text. Delete all numbers from text. 
         /// </summary>
@@ -27,7 +28,6 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             text = Regex.Replace(text, "[0-9]", "", RegexOptions.IgnoreCase);
             Console.WriteLine(text);
         }
-
         /// <summary>
         /// TASK #2 -  Сreate a string of words [Welcome to the TMS lesons]
         /// </summary>
@@ -41,7 +41,6 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             string[] words = new string[] { word1, word2, word3, word4, word5 };
             Console.WriteLine(string.Join(" ", words));
         }
-
         /// <summary>
         /// TASK #3 - Create 2 variables of string [teamwithsomeofexcersicesabcwanttomakeitbetter]
         /// </summary>
@@ -56,9 +55,22 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             Console.WriteLine(firstWord);
             Console.WriteLine(secondWord);
         }
-
-
-
+        /// <summary>
+        /// TASK #4 - Change [Bad day] to [Good day!!!!!!!!?]
+        /// </summary>
+        public static void HW4_T4()
+        {
+            string text = "Bad day";
+            Console.WriteLine(text);
+            text = text.Substring(3);
+            Console.WriteLine(text);
+            text = text.Insert(0, "Good");
+            text = text.Insert(text.Length, "!!!!!!!!!");
+            Console.WriteLine(text);
+            text = text.Remove(text.Length - 1);
+            text = text.Insert(text.Length, "?");
+            Console.WriteLine(text);
+        }
 
 
 
