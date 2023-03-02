@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
@@ -16,7 +17,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             HW4_T2();
             HW4_T3();
             HW4_T4();
-
+            HW4_T5();
         }
         /// <summary>
         /// TASK #1 - Change [TEST] to [TESTING] in text. Delete all numbers from text. 
@@ -71,9 +72,32 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             text = text.Insert(text.Length, "?");
             Console.WriteLine(text);
         }
+        /// <summary>
+        /// TASK #5 - Document number [xxxx-yyy-xxxx-yyy-xyxy]
+        /// </summary>
+        public static void HW4_T5()
+        {
+            string myDocument = "5831-asd-0564-ert-4u6w";
+            Console.WriteLine(myDocument);
+            string[] numbers = myDocument.Split(new char[] { '-' });
+            Console.WriteLine(numbers[0] + numbers[2]);
 
 
 
+            string result = numbers[0].Remove(numbers[0].Length - 3);
+            string result2 = numbers[0].Insert(numbers[0].Length, "***");
+
+            string value = String.Concat<char>(numbers);
+
+
+            //Console.WriteLine(string.Join("-", numbers));
+
+
+            //Console.WriteLine(numbers);
+
+
+
+        }
 
 
 
