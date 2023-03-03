@@ -9,7 +9,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
     public static class HomeTask4_Document_Task
     {
-        public static void Tasks()
+        public static void HW4_T5()
         {
             HW4_T5_1();
             HW4_T5_2();

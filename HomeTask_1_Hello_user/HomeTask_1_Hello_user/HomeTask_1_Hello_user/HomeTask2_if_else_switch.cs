@@ -8,7 +8,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
     public class HomeTask2_if_else_switch
     {
-        public static void Tasks()
+        public static void HW2()
         {
             HW2_T1_Calculator();
             HW2_T2_Number_ranges();

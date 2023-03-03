@@ -11,7 +11,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
     public class HomeTask4_Strings_Tasks_1_4
     {
-        public static void Tasks()
+        public static void HW4()
         {
             HW4_T1();
             HW4_T2();

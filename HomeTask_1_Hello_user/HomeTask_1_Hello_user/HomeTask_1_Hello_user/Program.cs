@@ -10,7 +10,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
     {
         static void Main(string[] args)
         {
-           
+            HomeTask4_Document_Task.HW4_T5();
         } 
     }
 }
