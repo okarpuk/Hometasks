@@ -27,6 +27,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             text = text.Replace("TEST", "TESTING"); //или тоже использовать Regex
             text = Regex.Replace(text, "[0-9]", "", RegexOptions.IgnoreCase);
             Console.WriteLine(text);
+            Console.WriteLine();
         }
         /// <summary>
         /// TASK #2 -  Сreate a string of words [Welcome to the TMS lesons]
@@ -40,6 +41,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             string word5 = "\"lessons\"";
             string[] words = new string[] { word1, word2, word3, word4, word5 };
             Console.WriteLine(string.Join(" ", words));
+            Console.WriteLine();
         }
         /// <summary>
         /// TASK #3 - Create 2 variables of string [teamwithsomeofexcersicesabcwanttomakeitbetter]
@@ -54,6 +56,7 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             string secondWord = words[1];
             Console.WriteLine(firstWord);
             Console.WriteLine(secondWord);
+            Console.WriteLine();
         }
         /// <summary>
         /// TASK #4 - Change [Bad day] to [Good day!!!!!!!!?]
@@ -62,14 +65,28 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
         {
             string text = "Bad day";
             Console.WriteLine(text);
-            text = text.Substring(3);
+            text = text.Substring(4);
             Console.WriteLine(text);
-            text = text.Insert(0, "Good");
+            text = text.Insert(0, "Good ");
             text = text.Insert(text.Length, "!!!!!!!!!");
             Console.WriteLine(text);
             text = text.Remove(text.Length - 1);
             text = text.Insert(text.Length, "?");
             Console.WriteLine(text);
+        }
+        /// <summary>
+        /// TASK #5 - Operations with document number
+        /// </summary>
+        public static void HW4_T5()
+        {
+            string docNumber = "5551-abc-0564-eRt-1a2b";
+            HomeTask4_Document_Task.HW4_T5_1(docNumber);
+            HomeTask4_Document_Task.HW4_T5_2(docNumber);
+            HomeTask4_Document_Task.HW4_T5_3(docNumber);
+            HomeTask4_Document_Task.HW4_T5_4(docNumber);
+            HomeTask4_Document_Task.HW4_T5_5(docNumber);
+            HomeTask4_Document_Task.HW4_T5_6(docNumber);
+            HomeTask4_Document_Task.HW4_T5_7(docNumber);
         }
     }
 }
