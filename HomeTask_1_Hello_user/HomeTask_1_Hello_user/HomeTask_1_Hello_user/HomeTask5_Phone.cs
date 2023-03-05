@@ -14,16 +14,16 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
         public int weight = 0;
         public string name = "Unknown";
 
-        //public HomeTask5_Phone() { number = 12345678; model = "qwerty"; weight = 222; }
-        //public HomeTask5_Phone() { number = 12345678; model = "qwerty"; }
-        //public HomeTask5_Phone() { }
+        // CONSTRUCTORS
+        //public HomeTask5_Phone() { number = 12345678; model = "qwerty"; weight = 222; } // 3 parameters
+        //public HomeTask5_Phone() { number = 12345678; model = "qwerty"; }               // 2 parameters
+        //public HomeTask5_Phone() { }                                                    // no parameters
 
-
-        //public HomeTask5_Phone(int number, string model) : this(number, model, 0)
+        // CONSTRUCTOR WITH 2 PARAMETERS FROM 3
+        //public HomeTask5_Phone(int number, string model) : this(number, model, 5555555)
         //{
-
         //}
-        //public HomeTask5_Phone(int number, string model, int weight)
+        //public HomeTask5_Phone(int number = 223344, string model = "Note 9S", int weight = 111)
         //{
         //    this.number = number;
         //    this.model = model;
@@ -34,21 +34,33 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
         {
             Console.WriteLine($"Phone number: {number}, Phone model: {model}, Phone weight: {weight}");
         }
-
         public void receiveCall()
         {
             Console.Write($"Caller: {name} ");
         }
 
-        public void getNumber()
+        // METHOD OVERLOAD
+        //public void receiveCall(string name)
+        //{
+        //    Console.Write($"Caller: {name} ");
+        //}
+        //public void receiveCall(string name, int number)
+        //{
+        //    Console.Write($"Caller: {name}, Phone number: {number}");
+        //}
+
+        public int getNumber()
         {
             Console.WriteLine(number);
+            return number;
         }
-
-
-
-
-
-
+        public void sendMessage()
+        {
+            Console.WriteLine("Please enter 3 phone numbers to send message");
+            string numberToSend1 = Console.ReadLine();
+            string numberToSend2 = Console.ReadLine();
+            string numberToSend3 = Console.ReadLine();
+            Console.WriteLine($"The message will be send to numbers: {numberToSend1}, {numberToSend2}, {numberToSend3}");
+        }
     }
 }
