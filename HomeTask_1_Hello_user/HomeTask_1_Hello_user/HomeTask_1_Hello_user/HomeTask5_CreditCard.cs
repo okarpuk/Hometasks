@@ -48,15 +48,5 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
         {
             Console.WriteLine($"Total sum on account #{accountNumber}: {currentSum}");
         }
-
-
-
-
-
-
-
-
-
-
     }
 }

@@ -20,16 +20,15 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
         //public HomeTask5_Phone() { }                                                    // no parameters
 
         // CONSTRUCTOR WITH 2 PARAMETERS FROM 3
-        //public HomeTask5_Phone(int number, string model) : this(number, model, 5555555)
-        //{
-        //}
-        //public HomeTask5_Phone(int number = 223344, string model = "Note 9S", int weight = 111)
-        //{
-        //    this.number = number;
-        //    this.model = model;
-        //    this.weight = weight;
-        //}
-
+        public HomeTask5_Phone(int number, string model) : this(number, model, 5555555)
+        {
+        }
+        public HomeTask5_Phone(int number = 223344, string model = "Note 9S", int weight = 111)
+        {
+            this.number = number;
+            this.model = model;
+            this.weight = weight;
+        }
         public void Print()
         {
             Console.WriteLine($"Phone number: {number}, Phone model: {model}, Phone weight: {weight}");
@@ -38,17 +37,15 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
         {
             Console.Write($"Caller: {name} ");
         }
-
         // METHOD OVERLOAD
-        //public void receiveCall(string name)
-        //{
-        //    Console.Write($"Caller: {name} ");
-        //}
-        //public void receiveCall(string name, int number)
-        //{
-        //    Console.Write($"Caller: {name}, Phone number: {number}");
-        //}
-
+        public void receiveCall(string name)
+        {
+            Console.Write($"Caller: {name} ");
+        }
+        public void receiveCall(string name, int number)
+        {
+            Console.Write($"Caller: {name}, Phone number: {number}");
+        }
         public int getNumber()
         {
             Console.WriteLine(number);
