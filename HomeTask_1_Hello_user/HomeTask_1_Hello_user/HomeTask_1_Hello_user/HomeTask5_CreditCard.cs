@@ -8,9 +8,8 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
     internal class HomeTask5_CreditCard
     {
-        public int accountNumber = 123456;
-        public double currentSum = 3456.88;
-
+        public int accountNumber;
+        public double currentSum = 9999;
         public void Refill()
         {
             Console.WriteLine("Please enter your account number");
@@ -26,8 +25,8 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             {
                 Console.WriteLine("Incorrect account number");
             }
+            Console.WriteLine();
         }
-
         public void Withdrawal()
         {
             Console.WriteLine("Please enter your account number");
@@ -43,9 +42,12 @@ namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
             {
                 Console.WriteLine("Incorrect account number");
             }
+            Console.WriteLine();
         }
-
-
+        public void SumOnAccount()
+        {
+            Console.WriteLine($"Total sum on account #{accountNumber}: {currentSum}");
+        }
 
 
 
