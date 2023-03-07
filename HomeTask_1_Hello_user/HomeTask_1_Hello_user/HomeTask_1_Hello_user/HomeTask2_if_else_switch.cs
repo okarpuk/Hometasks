@@ -1,8 +1,14 @@
-﻿namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
 {
-    internal class HomeTask2
+    public class HomeTask2_if_else_switch
     {
-        public static void Tasks()
+        public static void HW2()
         {
             HW2_T1_Calculator();
             HW2_T2_Number_ranges();
