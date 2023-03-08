@@ -10,7 +10,7 @@ namespace HomeTasks_1_4.HomeTasks_1_4
     {
         static void Main(string[] args)
         {
-            HomeTask1_Hello_user.HW1_Hello_user();
+            //HomeTask1_Hello_user.HW1_Hello_user();
             //HomeTask2_if_else_switch.HW2_T1_Calculator();
             //HomeTask2_if_else_switch.HW2_T2_Number_ranges();
             //HomeTask2_if_else_switch.HW2_T3_Weather_translator();
@@ -28,7 +28,6 @@ namespace HomeTasks_1_4.HomeTasks_1_4
             //HomeTask4_Strings_Tasks_1_4.HW4_T3();
             //HomeTask4_Strings_Tasks_1_4.HW4_T4();
             //HomeTask4_Strings_Tasks_1_4.HW4_T5();
-
         }
     }
 }

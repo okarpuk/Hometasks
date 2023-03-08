@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
+namespace HomeTasks_1_4.HomeTasks_1_4
 {
     public class HomeTask3_Arrays
     {

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace HomeTask_5_Classes.HomeTask_5_Classes
 {
-    internal class HomeTask5_CreditCard
+    public class HomeTask5_CreditCard
     {
         public int accountNumber = 9999;
         public double currentSum = 9999;

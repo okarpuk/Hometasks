@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
+namespace HomeTasks_1_4.HomeTasks_1_4
 {
     public class HomeTask4_Strings_Tasks_1_4
     {
