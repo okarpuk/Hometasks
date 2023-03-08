@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace HomeTask_6_OOP
 {
-    internal class EquiletarlTriangle : TriangleMain
+    public class EquiletarlTriangle : Triangle
     {
 
         public EquiletarlTriangle(double firstSide, double secondSide, double thirdSide) : base(firstSide, secondSide, thirdSide)
