@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
+namespace HomeTasks_1_4.HomeTasks_1_4
 {
-    public class HomeTask1_Hello_user
+    internal class HomeTask1_Hello_user
     {
         // HELLO USER
         public static void HW1_Hello_user()

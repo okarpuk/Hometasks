@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
+namespace HomeTask_5_Classes.HomeTask_5_Classes
 {
     internal class HomeTask5_CreditCard
     {
-        public int accountNumber;
+        public int accountNumber = 9999;
         public double currentSum = 9999;
         public void Refill()
         {

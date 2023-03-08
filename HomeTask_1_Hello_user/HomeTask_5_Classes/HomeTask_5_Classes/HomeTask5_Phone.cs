@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeTask_1_Hello_user.HomeTask_1_Hello_user
+namespace HomeTask_5_Classes.HomeTask_5_Classes
 {
     public class HomeTask5_Phone
     {
