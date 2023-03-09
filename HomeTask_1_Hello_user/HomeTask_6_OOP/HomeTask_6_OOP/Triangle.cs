@@ -18,18 +18,11 @@ namespace HomeTask_6_OOP
             this.secondSide = secondSide;
             this.thirdSide = thirdSide;
         }
-
         public virtual double GetSquare()
         {
             Console.WriteLine("Get square Heron formula");
             double semiPerimetr = (firstSide + secondSide + thirdSide) / 2;
             return Math.Sqrt(semiPerimetr * (semiPerimetr - firstSide) * (semiPerimetr - secondSide) * (semiPerimetr - thirdSide));
         }
-
-
-
-
-
-
     }
 }

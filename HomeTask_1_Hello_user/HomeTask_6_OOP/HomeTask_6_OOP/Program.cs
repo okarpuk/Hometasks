@@ -12,7 +12,7 @@ namespace HomeTask_6_OOP
     {
         static void Main()
         {
-            EquiletarlTriangle triangle = new EquiletarlTriangle(5, 5, 5);
+            Triangle triangle = new TriangleBuilder().CreateTriangle(5, 5, 5);
             Console.Write(triangle.GetSquare());
 
         }
