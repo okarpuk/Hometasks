@@ -9,19 +9,19 @@ namespace HomeTask_6_OOP
     public class TriangleBuilder
     {
         public TriangleBuilder() { }
-
         public Triangle CreateTriangle(double firstSide, double secondSide, double thirdSide)
         {
+            //Equiletarl
             if ((firstSide == secondSide) && (firstSide == thirdSide))
             {
                 return new EquiletarlTriangle(firstSide, secondSide, thirdSide);
             }
-
+            //Scalene
             else if ((firstSide != secondSide) && (firstSide != thirdSide) && (secondSide != thirdSide))
             {
                 return new ScaleneTriangle(firstSide, secondSide, thirdSide);
             }
-
+            //Isosceles
             else if ((firstSide == secondSide) && (firstSide != thirdSide))
             {
                 return new IsoscelesTriangle(firstSide, secondSide, thirdSide);
@@ -34,28 +34,19 @@ namespace HomeTask_6_OOP
             {
                 return new IsoscelesTriangle(firstSide, secondSide, thirdSide);
             }
-
-            double hypotenuse = firstSide;
-            double cathetFirst = secondSide;
-            double cathetSecond = thirdSide;
-
-            if (secondSide > hypotenuse)
+            //RightTriangle
+            if (Math.Pow(firstSide, 2) + Math.Pow(secondSide, 2) == Math.Pow(thirdSide, 2))
             {
-                hypotenuse = secondSide;
-                cathetFirst = firstSide;
-                cathetSecond = thirdSide;
+                return new RightTriangle(firstSide, secondSide, thirdSide);
             }
-            if (thirdSide > hypotenuse)
+            if (Math.Pow(firstSide, 2) + Math.Pow(thirdSide, 2) == Math.Pow(secondSide, 2))
             {
-                hypotenuse = thirdSide;
-                cathetFirst = firstSide;
-                cathetSecond = secondSide;
+                return new RightTriangle(firstSide, secondSide, thirdSide);
             }
-            if (Math.Pow(hypotenuse, 2) == Math.Pow(cathetFirst, 2) + Math.Pow(cathetSecond, 2))
+            if (Math.Pow(secondSide, 2) + Math.Pow(thirdSide, 2) == Math.Pow(firstSide, 2))
             {
-                return new RightTriangle(cathetFirst, cathetSecond, hypotenuse);
+                return new RightTriangle(firstSide, secondSide, thirdSide);
             }
-
             return new Triangle(firstSide, secondSide, thirdSide);
         }
     }

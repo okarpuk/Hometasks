@@ -12,9 +12,9 @@ namespace HomeTask_6_OOP
         public RightTriangle(double firstSide, double secondSide, double thirdSide) : base(firstSide, secondSide, thirdSide)
         {
         }
-
         public override double GetSquare()
         {
+            Console.WriteLine("Get RightTriangle square");
             if (firstSide > secondSide)
             {
                 if (firstSide > thirdSide)
@@ -38,7 +38,6 @@ namespace HomeTask_6_OOP
                 }
             }
         }
-
         private double GetSquareForRightTriangle(double firstSide, double secondSide)
         {
             return 0.5 * firstSide * secondSide;

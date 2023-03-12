@@ -14,7 +14,7 @@ namespace HomeTask_6_OOP
         }
         public override double GetSquare()
         {
-            Console.WriteLine("Get square EquiletarlTriangle");
+            Console.WriteLine("Get EquiletarlTriangle square");
             return Math.Pow(firstSide, 2) * Math.Sqrt(3) / 4;
         }
     }

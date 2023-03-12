@@ -14,7 +14,7 @@ namespace HomeTask_6_OOP
         }
         public override double GetSquare()
         {
-            Console.WriteLine("Get square IsoscelesTriangle");
+            Console.WriteLine("Get IsoscelesTriangle square");
             double height = Math.Sqrt(Math.Pow(firstSide, 2) - (Math.Pow(thirdSide, 2) / 4));
             return height * (thirdSide / 2);
         }

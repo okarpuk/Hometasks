@@ -14,7 +14,7 @@ namespace HomeTask_6_OOP
         }
         public override double GetSquare()
         {
-            Console.WriteLine("Get square ScaleneTriangle");
+            Console.WriteLine("Get ScaleneTriangle square");
             double semiPerimetr = (firstSide + secondSide + thirdSide) / 2;
             return Math.Sqrt(semiPerimetr * (semiPerimetr - firstSide) * (semiPerimetr - secondSide) * (semiPerimetr - thirdSide));
         }
