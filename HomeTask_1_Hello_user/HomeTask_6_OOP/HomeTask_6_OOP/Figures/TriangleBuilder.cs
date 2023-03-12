@@ -16,6 +16,19 @@ namespace HomeTask_6_OOP
             {
                 return new EquiletarlTriangle(firstSide, secondSide, thirdSide);
             }
+            //RightTriangle
+            if (Math.Pow(firstSide, 2) + Math.Pow(secondSide, 2) == Math.Pow(thirdSide, 2))
+            {
+                return new RightTriangle(firstSide, secondSide, thirdSide);
+            }
+            if (Math.Pow(firstSide, 2) + Math.Pow(thirdSide, 2) == Math.Pow(secondSide, 2))
+            {
+                return new RightTriangle(firstSide, secondSide, thirdSide);
+            }
+            if (Math.Pow(secondSide, 2) + Math.Pow(thirdSide, 2) == Math.Pow(firstSide, 2))
+            {
+                return new RightTriangle(firstSide, secondSide, thirdSide);
+            }
             //Scalene
             else if ((firstSide != secondSide) && (firstSide != thirdSide) && (secondSide != thirdSide))
             {
@@ -33,19 +46,6 @@ namespace HomeTask_6_OOP
             else if ((secondSide == thirdSide) && (firstSide != secondSide))
             {
                 return new IsoscelesTriangle(firstSide, secondSide, thirdSide);
-            }
-            //RightTriangle
-            if (Math.Pow(firstSide, 2) + Math.Pow(secondSide, 2) == Math.Pow(thirdSide, 2))
-            {
-                return new RightTriangle(firstSide, secondSide, thirdSide);
-            }
-            if (Math.Pow(firstSide, 2) + Math.Pow(thirdSide, 2) == Math.Pow(secondSide, 2))
-            {
-                return new RightTriangle(firstSide, secondSide, thirdSide);
-            }
-            if (Math.Pow(secondSide, 2) + Math.Pow(thirdSide, 2) == Math.Pow(firstSide, 2))
-            {
-                return new RightTriangle(firstSide, secondSide, thirdSide);
             }
             return new Triangle(firstSide, secondSide, thirdSide);
         }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HomeTask_6_OOP
 {
-	public class allFigures
+	public class AllFigures
 	{
         public virtual double GetSquare()
         {

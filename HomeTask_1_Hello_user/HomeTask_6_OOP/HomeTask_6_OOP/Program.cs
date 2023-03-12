@@ -13,18 +13,23 @@ namespace HomeTask_6_OOP
         {
             //Triangle
             Triangle triangle1 = new TriangleBuilder().CreateTriangle(5, 5, 5);
-            Console.WriteLine(triangle1.GetSquare());
             Triangle triangle2 = new TriangleBuilder().CreateTriangle(6, 4, 6);
-            Console.WriteLine(triangle2.GetSquare());
             Triangle triangle3 = new TriangleBuilder().CreateTriangle(6, 8, 10);
-            Console.WriteLine(triangle3.GetSquare());
             Triangle triangle4 = new TriangleBuilder().CreateTriangle(5, 7, 10);
-            Console.WriteLine(triangle4.GetSquare());
             //Rectangle
             Rectangle rectangle1 = new RectangleBuilder().CreateRectangle(5, 8);
-            Console.WriteLine(rectangle1.GetSquare());
             Rectangle rectangle2 = new RectangleBuilder().CreateRectangle(5, 5);
-            Console.WriteLine(rectangle2.GetSquare());
+            //Arrays
+            Triangle[] allTriangles = { triangle1, triangle2, triangle3, triangle4 };
+            foreach (var figureTriangle in allTriangles)
+            {
+                Console.WriteLine(figureTriangle.GetSquare().ToString());
+            }
+            Rectangle[] allRectangles = { rectangle1, rectangle2 };
+            foreach (var figureRectangle in allRectangles)
+            {
+                Console.WriteLine(figureRectangle.GetSquare().ToString());
+            }
         }
     }
-}   
+}

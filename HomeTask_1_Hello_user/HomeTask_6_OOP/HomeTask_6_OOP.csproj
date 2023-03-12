@@ -9,8 +9,10 @@
 
   <ItemGroup>
     <None Remove="HomeTask_6_OOP\Figures\" />
+    <None Remove="HomeTask_6_OOP\Hospital\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HomeTask_6_OOP\Figures\" />
+    <Folder Include="HomeTask_6_OOP\Hospital\" />
   </ItemGroup>
 </Project>
