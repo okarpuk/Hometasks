@@ -7,10 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="HomeTask_6_OOP\Figures\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="HomeTask_6_OOP\Figures\" />
-  </ItemGroup>
 </Project>
