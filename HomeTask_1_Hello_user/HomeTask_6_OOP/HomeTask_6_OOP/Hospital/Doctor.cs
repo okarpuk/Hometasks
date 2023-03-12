@@ -7,21 +7,12 @@ using System.Threading.Tasks;
 
 namespace HomeTask_6_OOP
 {
-	public class AllFigures
+	public class Doctor
 	{
-        public virtual double GetSquare()
-        {
-            return 0.0;
-        }
-        public override string ToString()
-        {
-            return GetType().Name;
+        public virtual void Treat()
+        { 
+            Console.WriteLine("Treating");
         }
     }
 }
-
-
-
-
-
 
