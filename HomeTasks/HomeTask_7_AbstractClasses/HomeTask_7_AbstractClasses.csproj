@@ -8,11 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Hospital\" />
-    <None Remove="Figures\" />
+    <None Remove="AutoPark\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Hospital\" />
-    <Folder Include="Figures\" />
+    <Folder Include="AutoPark\" />
   </ItemGroup>
 </Project>
