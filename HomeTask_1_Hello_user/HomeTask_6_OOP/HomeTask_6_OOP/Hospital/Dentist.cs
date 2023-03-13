@@ -4,14 +4,15 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using HomeTask_6_OOP;
 
 namespace HomeTask_6_OOP
 {
     public class Dentist : Doctor
     {
-        public override void Treat()
+        public override string Treat()
         {
-            Console.WriteLine("Dental treatment");
+            return "Dental treatment";
         }
     }
 }
