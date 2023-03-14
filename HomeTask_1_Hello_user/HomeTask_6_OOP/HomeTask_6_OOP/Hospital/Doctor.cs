@@ -8,10 +8,10 @@ using HomeTask_6_OOP;
 
 namespace HomeTask_6_OOP
 {
-	public class Doctor
-	{
+    public class Doctor
+    {
         public virtual string Treat()
-        { 
+        {
             return "Treating";
         }
     }

@@ -16,6 +16,7 @@ namespace HomeTask_6_OOP
             this.height = height;
             this.width = width;
         }
+
         public virtual double GetSquare()
         {
             Console.WriteLine("Get rectangle square");

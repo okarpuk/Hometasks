@@ -12,6 +12,7 @@ namespace HomeTask_6_OOP
         public ScaleneTriangle(double firstSide, double secondSide, double thirdSide) : base(firstSide, secondSide, thirdSide)
         {
         }
+
         public override double GetSquare()
         {
             Console.WriteLine("Get ScaleneTriangle square");
